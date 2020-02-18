@@ -7,15 +7,16 @@
 	<link rel="icon" href="assets/images/icons/favicon.ico">
   <link rel="stylesheet" type="text/css" href="assets/style.css">
   <link href="https://fonts.googleapis.com/css?family=Aleo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Gulp SASS Boilerplate</title>
 </head>
 <body>
  <header>
-   <nav>
-     <h3>
+   <nav class="nav">
+     <h2 class="nav__title">
        Resto
-     </h3>
-     <ul>
+     </h2>
+     <ul class="nav__list">
        <li><a>Our story</a></li>
        <li><a>Menu</a></li>
        <li><a>reservation</a></li>
@@ -24,6 +25,207 @@
      </ul>
    </nav>
  </header>
+  <section class="image-container">
+    <div class="image-container__title">
+      <h2 class="heading">
+        This Template is awesome
+      </h2>
+      <p class="content">
+        resto restaurant home page website template
+      </p>
+    </div>
+  </section>
+  <section class="menu">
+    <div class="menu__flag">
+      The Menu
+    </div>
+    <div class="menu__list">
+      <div class="item">
+        <div class="item__name">
+          <h4>Voluptate cillum fugiat.</h4>
+          <p>Cheese, tomato, mushrooms, onions.</p>
+        </div>
+        <div class="item__price">$50</div>
+      </div>
+      <div class="item">
+        <div class="item__name">
+          <h4>Arcu pede enim justo.</h4>
+          <p>Tuna, Sweetcorn, Cheese.</p>
+        </div>
+        <div class="item__price">$45</div>
+      </div>
+      <div class="item">
+        <div class="item__name">
+          <h4>Metus varius laoreet.</h4>
+          <p>Chicken, mozzarella cheese, onions.</p>
+        </div>
+        <div class="item__price">$62</div>
+      </div>
+      <div class="item">
+        <div class="item__name">
+          <h4>Voluptate cillum fugiat.</h4>
+          <p>Cheese, tomato, mushrooms, onions.</p>
+        </div>
+        <div class="item__price">$50</div>
+      </div>
+      <div class="item">
+        <div class="item__name">
+          <h4>Cras dapibussemper nisi.</h4>
+          <p>Pineapple, Minced Beef, Cheese.</p>
+        </div>
+        <div class="item__price">$32</div>
+      </div>
+      <div class="item">
+        <div class="item__name">
+          <h4>Donec sodales magna.</h4>
+          <p>Tuna, Sweetcorn, Cheese.</p>
+        </div>
+        <div class="item__price">$25</div>
+      </div>
+      <div class="item">
+        <div class="item__name">
+          <h4>Quam semper libero.</h4>
+          <p>Cheese, tomato, mushrooms, onions.</p>
+        </div>
+        <div class="item__price">$15</div>
+      </div>
+      <div class="item">
+        <div class="item__name">
+          <h4>Nam eget dui Etiam.</h4>
+          <p>Chicken, mozzarella cheese, onions.</p>
+        </div>
+        <div class="item__price">$35</div>
+      </div>
+    </div>
+    <div class="menu__button">
+      <p>
+        load more 
+      </p>
+      <div></div>
+      <span></span>
+    </div>
+  </section>
+  <section class="dishes">
+    <div class="dishes__heading">
+      <h2>Featured dishes</h2>
+      <div> 
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="dishes__list">
+      <div class="dish">
+          <img class="dish__img" src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_232,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F160929101749-essential-spanish-dish-paella-phaidon.jpg" alt="food1">
+        <div class="dish__description">
+          <div>
+            <p>Fugiat nulla sint</p>
+            <div class="rate">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+          <div class="price">$30</div>
+        </div>
+      </div>
+      <div class="dish">
+          <img class="dish__img" src="https://static.eazydiner.com/resized/750X436/eazytrendz%2F1809%2Ftrend20180308122949.jpg" alt="food1">
+        <div class="dish__description">
+          <div>
+            <p class="name">Daute irure dolor</p>
+            <div class="rate">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+          <div class="price">$24</div>
+        </div>
+      </div>
+      <div class="dish">
+          <img class="dish__img" src="https://www.iliketowastemytime.com/sites/default/files/world-of-food-carl-warner9.jpg" alt="food1">
+        <div class="dish__description">
+          <div>
+            <p class="name">Officia deserunt mollit</p>
+            <div class="rate">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+          </div>
+          <div class="price">$60</div>
+        </div>
+      </div>
+      <div class="dish">
+          <img class="dish__img" src="https://images.squarespace-cdn.com/content/v1/57222aa87c65e4e273671ded/1462208322089-AWB12PLCU0I1ZOMWBXM0/ke17ZwdGBToddI8pDm48kJM_bTdIUZ_SMP9VWBBFH4J7gQa3H78H3Y0txjaiv_0fEtJToLhilMNuFwmcUDHJYcUQROQ1opg6yYO1RvQYc7-hCiRXgMc31_OM3ItCAqDJ8eSOYnNd9sCB8xjAo8q6Bk6sq9GEl9ZUDkp1sRKcAyLNhXlQcJ-acb8k5mUBlYnDpS1XngW5TQ9vrei3wXjtVQ/My+Awesome+Cafe+-+19.jpg?format=2500w" alt="food1">
+        <div class="dish__description">
+          <div>
+            <p class="name">Pim minim veniam</p>
+            <div class="rate">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+          <div class="price">$17</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="gallery">
+    <h2 class="gallery__heading">
+      The Gallery
+    </h2>
+    <div class="gallery__items">
+      <div>
+        <img src="https://images.squarespace-cdn.com/content/v1/57222aa87c65e4e273671ded/1462208322089-AWB12PLCU0I1ZOMWBXM0/ke17ZwdGBToddI8pDm48kJM_bTdIUZ_SMP9VWBBFH4J7gQa3H78H3Y0txjaiv_0fEtJToLhilMNuFwmcUDHJYcUQROQ1opg6yYO1RvQYc7-hCiRXgMc31_OM3ItCAqDJ8eSOYnNd9sCB8xjAo8q6Bk6sq9GEl9ZUDkp1sRKcAyLNhXlQcJ-acb8k5mUBlYnDpS1XngW5TQ9vrei3wXjtVQ/My+Awesome+Cafe+-+19.jpg?format=2500w" />
+
+      </div>
+      <div>
+        <img src="https://res-2.cloudinary.com/dostuff-media/image/upload//w_1200,q_75,c_limit,f_auto/v1569513600/page-image-1611-eadb86ed-62fe-493a-a55a-8a0b5da02a91.png" />
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20190503-delish-pineapple-baked-salmon-horizontal-ehg-450-1557771120.jpg?crop=0.669xw:1.00xh;0.173xw,0&resize=640:*" />
+      </div>
+      <div>
+        <img src="https://media.timeout.com/images/105365283/630/472/image.jpg" />
+        <img src="https://static1.squarespace.com/static/53c44f46e4b0dadc9916ed38/53c45cf9e4b0da0978ffaea6/5cab8f0df4e1fcb89d3355e7/1556728856110/9id1-L8w.jpeg?format=1500w" />
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div>
+      <h4>New York Restaurant</h4>
+      <p>3926 Anmoore Road</p>
+      <p>New York, NY 10014</p>
+      <h4>718-749-1714</h4>
+    </div>
+    <div>
+      <h4>France Restaurant</h4>
+      <p>68, rue de la Couronne</p>
+      <p> 75002 PARIS</p>
+      <h4>02.94.23.69.56</h4>
+    </div>
+    <div>
+      <h4>Blog</h4>
+      <h4>Careers</h4>
+      <h4>Privacy Policy</h4>
+      <h4>Contact</h4>
+    </div>
+    <div>
+      <h2>Resto</h2>
+      <p>© All Rights Reserved 2014.</p>
+      <p>Find  More at <span>Pixelhint.com</span></p>
+    </div>
+  </footer>
   <script src="assets/script.js"></script>
 </body>
 </html>
