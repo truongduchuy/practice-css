@@ -1,0 +1,63 @@
+@mixin greaterThan($point) {
+  @if $point == 'xl' {
+    @media only screen and (min-width: $bs-xl) {
+      @content;
+    }
+  }
+
+  @else if $point == 'lg' {
+    @media only screen and (min-width: $bs-lg) {
+      @content;
+    }
+  }
+
+  @else if $point == 'md' {
+    @media only screen and (min-width: $bs-md) {
+      @content;
+    }
+  }
+
+  @else if $point == 'sm' {
+    @media only screen and (min-width: $bs-sm) {
+      @content;
+    }
+  }
+
+  @else if $point == 'xs' {
+    @media only screen and (min-width: $bs-xs) {
+      @content;
+    }
+  }
+}
+
+@mixin lessThan($point) {
+  @if $point == 'xl' {
+    @media only screen and (max-width: ($bs-xl - 1px)) {
+      @content;
+    }
+  }
+
+  @else if $point == 'lg' {
+    @media only screen and (max-width: ($bs-lg - 1px)) {
+      @content;
+    }
+  }
+
+  @else if $point == 'md' {
+    @media only screen and (max-width: ($bs-md - 1px)) {
+      @content;
+    }
+  }
+
+  @else if $point == 'sm' {
+    @media only screen and (max-width: ($bs-sm - 1px)) {
+      @content;
+    }
+  }
+
+  @else if $point == 'xs' {
+    @media only screen and (max-width: ($bs-xs - 1px)) {
+      @content;
+    }
+  }
+}

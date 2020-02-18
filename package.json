@@ -1,0 +1,30 @@
+{
+  "name": "gulp-sass-boilerplate",
+  "version": "1.0.0",
+  "description": "Gulp SASS Bolerplate",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "author": "hoanght@bap.jp",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "jquery": "3.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "9.4.5",
+    "browser-sync": "2.26.3",
+    "cssnano": "4.1.8",
+    "del": "3.0.0",
+    "gulp": "4.0.0",
+    "gulp-connect": "5.7.0",
+    "gulp-notify": "3.2.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.2",
+    "lost": "8.3.0",
+    "rucksack-css": "1.0.2",
+    "webpack-stream": "5.2.1"
+  }
+}

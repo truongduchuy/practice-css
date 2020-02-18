@@ -1,0 +1,21 @@
+@import 'button';
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 200px;
+
+    ul {
+        font-size: 14px;
+        // line-height: 4.29;
+        display: flex;
+        li {
+            list-style: none;
+        }
+
+        li:not(:first-child) {
+            margin-left: 50px;
+        }
+    }
+    
+}
