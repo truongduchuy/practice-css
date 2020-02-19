@@ -59,9 +59,7 @@
                     right: 70px;
                     top: 10px;
                     position: absolute;
-                    @include line(130px, 1px, $text-color);
-                    height: 1px;
-                    width: 130px;
+                    @include line(70px, 1px, $text-color);
                }
             }
         }
@@ -97,8 +95,7 @@
         > span {
             border-style: solid;
             border-width: 1px 1px 0 0;
-            width: 10px;
-            height: 10px;
+            padding: 4px;
             transform: rotate(135deg);
             display: block;
             margin-top: -5px;
