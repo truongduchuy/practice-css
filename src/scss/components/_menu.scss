@@ -1,0 +1,108 @@
+.menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 200px;
+
+    &__flag {
+        width: 155px;
+        height: 65px;
+        background-color: $secondary-color;
+        position: relative;
+        color: $primary-color;
+        letter-spacing: 1px;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 15px;
+        box-sizing: content-box;
+        
+
+        &::after {
+            content: '';
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            border-bottom: 12px solid $primary-color;
+            border-left: 77.5px solid transparent;
+            border-right: 77.5px solid transparent;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 85px 200px;
+        
+        .item {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 60px;
+
+            &__name {
+                h4 {
+                    letter-spacing: 0.8px;
+                }
+
+                p {
+                    color: $text-color;
+                    font-size: 12px;
+                    letter-spacing: 0.6px;
+                }
+            }
+
+            &__price {
+                position: relative;
+
+               &::before {
+                    content: '';
+                    right: 70px;
+                    top: 10px;
+                    position: absolute;
+                    @include line(130px, 1px, $text-color);
+                    height: 1px;
+                    width: 130px;
+               }
+            }
+        }
+
+        .item:nth-child(even) {
+            padding-left: 60px;
+        }
+
+        .item:nth-child(odd) {
+            padding-right: 60px;
+        }
+
+    }
+
+    &__button {
+        font-size: 14px;
+        padding: 10px;
+        letter-spacing: 0.98px;
+        border: solid 1px #d7d5d5;
+        background-color: $primary-color;
+        color: $text-color;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        
+        > div:nth-child(2) {
+            width: 1px;
+            height: 10px;
+            background-color: $text-color;
+            margin: 0 12px;
+        }
+
+        > span {
+            border-style: solid;
+            border-width: 1px 1px 0 0;
+            width: 10px;
+            height: 10px;
+            transform: rotate(135deg);
+            display: block;
+            margin-top: -5px;
+        }
+
+    }
+}
